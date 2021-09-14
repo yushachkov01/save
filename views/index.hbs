@@ -1,0 +1,20 @@
+<form>
+  <input name="topic" placeholder="topic" value='1' type="text">
+  <input name="text" placeholder="text" value='2' type="text">
+  <button class="saveButton">save</button>
+  <span class='message'></span>
+</form>
+
+{{#if recordings}}
+<hr>
+
+{{#each recordings}}
+<li>
+  <div>
+    {{this.topic}}
+  </div>
+  <div>{{this.text}}</div>
+</li>
+
+{{/each}}
+{{/if}}
